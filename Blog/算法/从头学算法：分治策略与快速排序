@@ -1,0 +1,87 @@
+#快排介绍
+快速排序（Quick Sort）又叫分区排序，是目前应用最广泛的排序算法，大多数情况下快速排序比其他排序算法要快，并且在空间上不需要太多的辅助空间。其基本思想是将一个序列划分为两个子序列，使第一个子序列的所有元素都小于第二个子序列的所有元素。不断的这样划分，最后构成n个序列，每个序列只有一个元素。这时，它们就是按照递增顺序排序的序列了。
+####算法思路
+1. **分解：**选取基准元素pivotPos，然后将数组a[]，分三段为a[left:pivotPos-1]、a[pivotPos]、a[pivotPos+1:right]，元素pivotPos被称为中轴元素，一般会取数组的第一个元素。使得a[left:pivotPos-1]的所有元素的值都小于等于a[pivotPos]的值。
+2. **递归求解：**通过递归调用快速排序来对各段元素进行排序。
+3. **合并：**因为快速排序是就地进行的，不像[归并排序](http://www.jianshu.com/p/bf97709774a6)那样另辟数组来存放，所有最后得到的数组已经是排好序的。
+
+####关键步骤
+1. **划分过程：**我们需要从数组的两边对数组进行扫描，每次都把子元素与中轴元素进行比较；从左到右的扫描从第二个元素开始（第一个被选为中轴元素），当扫描元素小于中轴元素继续移动扫描指针，直到遇到第一个扫描元素大于中轴元素时停止；从右到左的扫描从右面最后一个元素开始，当大于中轴元素时继续移动扫描指针，直到遇到第一个小于等于中轴元素的元素停止；对停止后的a[left]与a[right]进行元素互换；将中轴元素放到数组中间。
+2. **递归排序：**每一次划分出左右分区，就执行递归排序，分别对左右分区的元素进行排序。
+
+####实例图解
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/852671-c6145dfa78fdc2cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+####代码实现
+	
+	    #include <iostream>
+	    void quickSort(int a[],int start,int end);
+	    int partition(int a[],int start,int end);
+	    void swap(int a, int b);
+	
+	    int main(int argc, const char * argv[]){
+	    
+	        int a[8] = {8,4,2,10,1,6,7,9};
+	    
+	        quickSort(a, 0, 7);
+	    
+	        for (int i = 0; i<8; i++) {
+	        
+	            std::cout<< a[i] << std::endl;
+	        
+	        }
+	    
+	        return 0;
+	    
+	    }
+	
+	    void quickSort(int a[],int start,int end){
+	    
+	    if (start<end) {
+	        //中心点位置 pivot position
+	        int pivotPos = partition(a, start, end);
+	        //对中心点pivotPos的前面的元素排序
+	        quickSort(a, start, pivotPos-1);
+	        //对后面的元素排序
+	        quickSort(a, pivotPos+1, end);
+	        
+	      }
+	    }
+	
+	    int partition(int a[],int start,int end){
+	 
+	    int i = start;
+	    int j = end+1;
+	    //中轴元素
+	    int x = a[start];
+	 
+	    while (true) {
+	    //如果左侧小于则移动扫描指针
+	        while (a[++i]<x);
+	        //右侧大于移动扫描指针
+	        while (a[--j]>x);
+	        
+	        if (i>=j)
+	            break;
+	        else{
+	            int temp = a[i];
+	            a[i] = a[j];
+	            a[j] = temp;
+	        }
+	    }
+	    
+	        a[start] = a[j];
+	        a[j] = x;
+	        return j;
+	    }
+####时间复杂度
+**最坏情况：**每次划分得到的区域包含n－1和1一个元素
+**最好情况：**每次划分所得的区域包涵n/2和n/2个元素，复杂度推导过程与[归并排序相同](http://www.jianshu.com/p/bf97709774a6)
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/852671-f7460f8df1d071a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+#常用排序算法对比
+>![Paste_Image.png](http://upload-images.jianshu.io/upload_images/852671-71cff74cf99a2587.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+#快排更优
+带有大量重复排序码的元素序列的排序问题，在实际应用中经常出现，这个时候以上的快排算法就会出现更优的写法。更新中...

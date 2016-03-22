@@ -1,0 +1,80 @@
+####定义：
+1. 将一元素集合分割成两个或更多个子集合，对每一个子集合分别排序。
+2. 然后将排好序的子集合归并为一个集合。
+
+####用途
+速度仅次于快速排序，为稳定排序算法，一般用于对总体无序，但是各子项相对有序的数列。
+
+
+
+####递归归并排序实现
+
+	
+    #include <iostream>
+	
+    void merge(int a[],int b[],int left,int middle,int right){
+	    
+	    int i = left;
+	    int j = middle +1;
+	    int k = left;
+	    while (i<=middle && j<=right) {
+	        
+	        if (a[i]<=a[j]) {
+	            b[k++] = a[i++];
+	        }
+	        else{
+	            b[k++] = a[j++];
+	        }
+	        
+	    }
+	    if (i<=middle) {
+	        while (i<=middle) {
+	            b[k++] = a[i++];
+	        }
+	    }
+	    else{
+	        while (j<=right) {
+	            b[k++] = a[j++];
+	        }
+	    }
+	    //将排好序的部分再次放进a数组中
+	    for (int n = left; n<= right; n++) {
+	        a[n] = b[n];
+	    }
+	    
+	 }
+	
+    void mergeSort(int a[],int b[],int left,int right){
+	    
+	    if (left<right) {
+	        
+	        int middle = (left + right)/2 ;
+	        //递归调用算法本身对从left到mid的数组元素排序
+	        mergeSort(a, b, left, middle);
+	        //递归调用算法本身对从mid+1到right的数组元素排序
+	        mergeSort(a, b, middle+1, right);
+	        // 合并两段排好序的数组
+	        merge(a, b, left, middle, right);
+	        
+	    }
+	    }
+	
+    int main(int argc, const char * argv[]){
+	    
+	    int a[8]={54,12,43,76,8,9,87,1};
+	    int b[8];
+	    
+	    mergeSort(a,b,0,7);
+	    //打印结果
+	    for(int q=0;q<8;q++)
+	        std::cout<<a[q]<<std::endl;
+	    
+	    return 0;
+	
+	 }
+
+####复杂度分析
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/852671-5939b516fb2ae8b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/852671-64ad1b850319516b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
