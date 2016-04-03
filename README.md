@@ -67,6 +67,7 @@
 	* [ReactiveCocoa v2.5 源码解析之架构总览](http://blog.leichunfeng.com/blog/2015/12/25/reactivecocoa-v2-dot-5-yuan-ma-jie-xi-zhi-jia-gou-zong-lan/)
 	* [如何正确地写好一个界面](http://oncenote.com/2015/12/08/How-to-build-UI/)
 	* [被误解的 MVC 和被神化的 MVVM](http://blog.devtang.com/2015/11/02/mvc-and-mvvm/)
+	* [各大互联网公司架构演进之路汇总](http://www.hollischuang.com/archives/1036)
 	
 * ### 资源分享
 	* [iOS 资源大全中文版](https://github.com/jobbole/awesome-ios-cn)
