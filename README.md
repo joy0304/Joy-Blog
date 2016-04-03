@@ -68,6 +68,11 @@
 	* [如何正确地写好一个界面](http://oncenote.com/2015/12/08/How-to-build-UI/)
 	* [被误解的 MVC 和被神化的 MVVM](http://blog.devtang.com/2015/11/02/mvc-and-mvvm/)
 	
+* ### 资源分享
+	* [iOS 资源大全中文版](https://github.com/jobbole/awesome-ios-cn)
+	* [iOS 开发知识树](http://blog.csdn.net/hherima/article/details/50714866)
+	* [汇集了Swift语言主流学习资源](https://github.com/ipader/SwiftGuide) 
+	* [简书精选专题：每日更新四篇](http://www.jianshu.com/collection/5aac963ca52d)
 
 * ### 面试经验
 
