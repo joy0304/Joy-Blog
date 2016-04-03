@@ -1,6 +1,4 @@
-# iOS 开发知识知识树精讲
-
-******
+# iOS 开发知识树精讲
 
 * ### 数据结构 & 算法
 	* [LeetCode](https://leetcode.com/problemset/algorithms/) 
@@ -10,9 +8,11 @@
 		* [整洁的 Table View 代码](http://objccn.io/issue-1-2/)
 		* [更轻量的 View Controllers](http://objccn.io/issue-1-1/)
 * ### Foundation 精讲
+	* a 
 * ### 数据库&持久化方案
-	*  
+	*  s
 * ### 内存管理
+
 	* [Objective-C Autorelease Pool 的实现原理](http://blog.leichunfeng.com/blog/2015/05/31/objective-c-autorelease-pool-implementation-principle/) 
 * ### 多线程编程
 	* [ Threading Programming Guide 笔记（一）](http://www.devtalking.com/articles/read-threading-programming-guide-1/) 
@@ -29,7 +29,9 @@
 	* [Objective-C Runtime 运行时之五：协议与分类](http://southpeak.github.io/blog/2014/11/08/objective-c-runtime-yun-xing-shi-zhi-wu-:xie-yi-yu-fen-lei/)
 	
 * ### 理解 Block 
+	* s 
 * ### Swift 相关
+
 	* [Advanced Swift中文版](http://www.jianshu.com/notebooks/2383569/latest) 
 	* [Swifter - Swift 必备 tips](http://swifter.tips/)
 * ### 架构设计
