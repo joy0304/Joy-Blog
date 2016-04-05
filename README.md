@@ -13,22 +13,23 @@
 		* [UIKit 性能调优实战讲解](https://bestswifter.com/uikitxing-neng-diao-you-shi-zhan-jiang-jie/)
 	* `UICollectionView`
 	
-		* [UICollectionView自定义布局教程:Pinterest](http://www.jianshu.com/p/22adf62ea491)
-		* [UICollectionView高级进阶篇](http://www.olinone.com/?p=280)
-		* [Collection View 动画 Oobjc系列译文](http://ios.jobbole.com/69259/)
-		* [UICollectionViews有了简单的重排功能](http://ios.jobbole.com/82403/)
+		* [iOS开发之窥探UICollectionViewController(一) ：Ready Your CollectionViewController](http://ios.jobbole.com/83565/)
+		* [iOS开发之窥探UICollectionViewController(二) ：详解CollectionView各种回调](http://ios.jobbole.com/83570/)
+		* [iOS开发之窥探UICollectionViewController(三) ：使用UICollectionView自定义瀑布流](http://ios.jobbole.com/83574/)
+		* [iOS开发之窥探UICollectionViewController(四) –一款功能强大的自定义瀑布流](http://ios.jobbole.com/83578/)
+		* [objc系列译文（12.5）：Collection View 动画](http://ios.jobbole.com/69259/)
 
 	* `UIViewController`
 	
-		* [UIView的生命周期总结](https://bestswifter.com/uiviewlifetime/)
-		
+		* [UIView 的生命周期总结](https://bestswifter.com/uiviewlifetime/)
+
+	* AutoLayout布局
+		* [Masonry介绍与使用实践](http://www.jianshu.com/p/yuCytg)
 	* 其他
 		* [史上最详细的iOS之事件的传递和响应机制](http://www.jianshu.com/p/2e074db792ba)
+		
 * ### Foundation 精讲
 	* [iOS 集合的深复制与浅复制](https://www.zybuluo.com/MicroCai/note/50592)
-	
-* ### 数据库 & 持久化方案
-	*  
 	
 * ### 内存管理
 

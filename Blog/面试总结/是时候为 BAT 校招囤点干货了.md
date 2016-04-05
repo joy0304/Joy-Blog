@@ -61,6 +61,7 @@
 * 讲一下浅拷贝和深拷贝吧 - [参考](https://www.zybuluo.com/MicroCai/note/50592)
 * `Objective-C`字典中`Key`、`Value`有什么特别的要求
 * `block` 的概念、本质、分类以及所带来的问题－(建议看多线程和内存管理一书)
+* `Strong` 和`weak`的底层了解吗？
 * `MRC` 与 `ARC` 下 `blcok` 的区别
 * 聊一下`block` 的 `strong weak dance` - [参考](http://www.jianshu.com/p/4ec18161d790)
 * 读过那些开源代码？请介绍其中一个
