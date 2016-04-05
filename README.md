@@ -5,7 +5,7 @@
 	* 剑指 Offer
 	* 编程之美
 	
-* ### UIKit 精讲
+* ### UIKit 精选
 	* `UITableView`
 	
 		* [整洁的 Table View 代码](http://objccn.io/issue-1-2/)
@@ -16,7 +16,7 @@
 		* [iOS开发之窥探UICollectionViewController(一) ：Ready Your CollectionViewController](http://ios.jobbole.com/83565/)
 		* [iOS开发之窥探UICollectionViewController(二) ：详解CollectionView各种回调](http://ios.jobbole.com/83570/)
 		* [iOS开发之窥探UICollectionViewController(三) ：使用UICollectionView自定义瀑布流](http://ios.jobbole.com/83574/)
-		* [iOS开发之窥探UICollectionViewController(四) –一款功能强大的自定义瀑布流](http://ios.jobbole.com/83578/)
+		* [iOS开发之窥探UICollectionViewController(四) ：一款功能强大的自定义瀑布流](http://ios.jobbole.com/83578/)
 		* [objc系列译文（12.5）：Collection View 动画](http://ios.jobbole.com/69259/)
 
 	* `UIViewController`
@@ -24,11 +24,13 @@
 		* [UIView 的生命周期总结](https://bestswifter.com/uiviewlifetime/)
 
 	* AutoLayout布局
-		* [Masonry介绍与使用实践](http://www.jianshu.com/p/yuCytg)
-	* 其他
-		* [史上最详细的iOS之事件的传递和响应机制](http://www.jianshu.com/p/2e074db792ba)
+		* [Masonry 介绍与使用实践](http://www.jianshu.com/p/yuCytg)
 		
-* ### Foundation 精讲
+	* 其他
+		* [史上最详细的 iOS 之事件的传递和响应机制](http://www.jianshu.com/p/2e074db792ba)
+		
+* ### Foundation 精选
+	* [Objective-C 之 Foundation 框架知识全览](http://www.cnblogs.com/kenshincui/p/3885689.html#boxing) 
 	* [iOS 集合的深复制与浅复制](https://www.zybuluo.com/MicroCai/note/50592)
 	
 * ### 内存管理
