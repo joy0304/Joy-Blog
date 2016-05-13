@@ -11,6 +11,8 @@
 		* [整洁的 Table View 代码](http://objccn.io/issue-1-2/)
 		* [更轻量的 View Controllers](http://objccn.io/issue-1-1/)
 		* [UIKit 性能调优实战讲解](https://bestswifter.com/uikitxing-neng-diao-you-shi-zhan-jiang-jie/)
+		* [优化 UITableViewCell 高度计算的那些事](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/)
+		* [UITableView 优化技巧](http://longxdragon.github.io/2015/05/26/UITableView%E4%BC%98%E5%8C%96%E6%8A%80%E5%B7%A7/)
 	* `UICollectionView`
 	
 		* [iOS开发之窥探UICollectionViewController(一) ：Ready Your CollectionViewController](http://ios.jobbole.com/83565/)
@@ -34,9 +36,11 @@
 	* [iOS 集合的深复制与浅复制](https://www.zybuluo.com/MicroCai/note/50592)
 	
 * ### 内存管理
-
+	* [先弄清楚这里的学问，再来谈 iOS 内存管理与优化（一）](http://www.jianshu.com/p/deab6550553a)
+	* [先弄清楚这里的学问，再来谈 iOS 内存管理与优化（二）](http://www.jianshu.com/p/f95b9bfda4a0)
 	* [Objective-C Autorelease Pool 的实现原理](http://blog.leichunfeng.com/blog/2015/05/31/objective-c-autorelease-pool-implementation-principle/) 
 	* [内存恶鬼 drawRect - 谈画图功能的内存优化](http://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=447105405&idx=1&sn=054dc54289a98e8a39f2b9386f4f620e&scene=0#wechat_redirect)
+	* [iOS 保持界面流畅的技巧](http://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
 	* 推荐 `Objective-C`高级编程：iOS 与 OS X 多线程和内存管理
 
 * ### 多线程编程
@@ -58,6 +62,8 @@
 	
 * ### 理解 Block 
 
+	* [iOS OC语言: Block底层实现原理](http://www.jianshu.com/p/e23078c11518)
+	* [Block 技巧与底层解析](http://www.jianshu.com/p/51d04b7639f1)
 	* 推荐 `Objective-C`高级编程：iOS 与 OS X 多线程和内存管理
 	
 * ### Swift 相关
@@ -77,6 +83,9 @@
 	* [iOS 开发知识树](http://blog.csdn.net/hherima/article/details/50714866)
 	* [汇集了Swift语言主流学习资源](https://github.com/ipader/SwiftGuide) 
 	* [简书精选专题：每日更新四篇](http://www.jianshu.com/collection/5aac963ca52d)
+
+* ### 开发工具
+	*  [史上最浅显易懂的Git教程！- 廖雪峰](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 * ### 面试经验
 
