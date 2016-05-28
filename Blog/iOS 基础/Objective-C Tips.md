@@ -151,3 +151,15 @@
 不能将`nil`放入数组，可以使用`NSull`对象代替`nil`
 
 	[array addobject:[NSNull null]];
+
+### 属性的内存管理特性
+
+	@property (nonatomic, copy) NSString *itemName;
+
+改用`copy`特性后，`itemName`属性的存方法可能类似于以下代码：
+	
+	- (void)setItemName:(NSString *)itemName{
+		_itemName = [itemName copy];
+	}
+这么做的原因是：如果属性指向的对象的类有可修改的子类，那么该属性可能会指向可修改的子类对象，同时，该对象可能会被其他拥有者修改，因此，最好先复制该对象，然后再将属性指向复制后的对象
+
