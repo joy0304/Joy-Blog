@@ -1,7 +1,7 @@
 ## Objective-C UI Tips
 
 
-### frame 单位
+### Frame 单位
 
 	CGRect firstFrame = CGRectMake(100, 200, 100, 200);
 	
@@ -34,3 +34,4 @@
 	}
 
 如果协议方法是必需的，就不需要检查委托对象是否实现了该方法
+

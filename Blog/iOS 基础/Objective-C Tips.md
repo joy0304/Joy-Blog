@@ -84,7 +84,7 @@
 
 1. 程序首先考虑调用`"setName:属性值"`代码通过`setter`方法完成设置
 2. 如果该类没有`setter`方法，那么`KVC`机制就会去寻找该类中名为`_name`的成员变量，对`_name`实例变量赋值
-3. 如果没有`setter`方法、`_name`成员变量，那么`KVC`机制会搜索该类中名为`name`的成员属性，对`name`成员变量赋值
+3. 如果没有`setter`方法、`_name`实例变量，那么`KVC`机制会搜索该类中名为`name`的成员属性，对`name`成员变量赋值
 4. 如果都没有找到，则会执行该对象的`setValue:forUnDefinedKey：`方法
 
 对于`“valueforKey@”name“;”`代码，底层执行机制是怎么样的？
