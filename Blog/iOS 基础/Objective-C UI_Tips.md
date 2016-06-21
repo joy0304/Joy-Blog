@@ -35,3 +35,10 @@
 
 如果协议方法是必需的，就不需要检查委托对象是否实现了该方法
 
+### How to Use updateConstraints
+
+简单来说.不要将`updateConstraints()`用于视图的初始化设置。当你需要在单个布局流程`（single layout pass）`中添加、修改或删除大量约束的时候，用它来获得最佳性能。如果没有性能问题，直接更新约束更简单。
+	
+>So when would you need to use updateConstraints? Well, it boils down to performance. If you find that just changing your constraints in place is too slow, then update constraints might be able to help you out. It turns out that changing a constraint inside updateConstraints is actually faster than changing a constraint at other times. The reason for that is because the engine is able to treat all the constraint changes that happen in this pass as a batch.
+
+[How to Use updateConstraints](http://oleb.net/blog/2015/08/how-to-use-updateconstraints/)、[在哪里写Autolayout布局最合适？](http://reviewcode.cn/article.html?reviewId=14)
