@@ -1,6 +1,7 @@
 # Joy Blog
 <p align='center'>
-<img src='contents/images/background-cover_.png'>
+<img src='http://ww3.sinaimg.cn/large/0060lm7Tly1fmmi1xqkhvj30sg0iy76o.jpg
+'>
 </p>
 <p align='center'>
 <a href="https://weibo.com/5419850564/profile?rightmod=1&wvr=6&mod=personinfo"><img src="https://img.shields.io/badge/weibo-@Joy-f974ce.svg?style=flat&colorA=f4292e"></a>
